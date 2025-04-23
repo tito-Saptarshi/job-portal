@@ -11,3 +11,8 @@ public class JobportalApplication {
 	}
 
 }
+
+
+// controller - handling web req
+// service - business logic
+// repo - accessing database
