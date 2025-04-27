@@ -23,7 +23,6 @@ public class CustomUserDetailsService implements UserDetailsService {
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         Users user = usersRepository.findByEmail(username).orElseThrow(() -> new UsernameNotFoundException("Could not found user"));
         return new CustomUserDetails(user);
-//        return null;
     }
 //    tell spring how to retrieve user from db
 }
